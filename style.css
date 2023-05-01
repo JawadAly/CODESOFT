@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    /* overflow: hidden !important; */
+}
+html{
+    scroll-behavior: smooth;
+}
+section{
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden !important;
+    float: left;
+}
+#footer-section{
+    min-height: 50vh !important;
+}
+
+.nav-wrapper{
+    width: 100%;
+    height: 60px;
+    background: lightseagreen;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+.logo{
+    height: 60px;
+}
+.logo .logo-text{
+    font-weight: 600;
+    z-index: 200;
+}
+.side-nav ul{
+    list-style: none;   
+    padding-top: 15px;
+}
+.side-nav ul li{
+    margin-right: 30px;
+}
+.side-nav ul li:last-child{
+    margin-right: 0;
+}
+.home-text{
+    font-weight: 500;
+}
+.sidebar-toggler-button{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+}
+.sidebar-toggler-button 
+.upper-line,
+.middle-line,
+.lower-line{
+    height: 3px;
+    width: 100%;
+    background: #fff;
+    margin-top: 7px;
+    border-radius: 50px;
+    transition: 0.2s ease-in-out;
+}
+.sidebar-toggler-button 
+.upper-line{
+    margin-top: 0;
+}
+@media only screen and (max-width:992px){
+    .side-nav{
+        position: fixed;
+        transform: translateY(-350px);
+        right: 0;
+        left: 0;
+        height: 100vh;
+        background-color: lightseagreen;
+        display: flex;
+        justify-content: center;
+        transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    .side-nav ul{
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .side-nav ul li{
+        display: block;
+        /* width: 100%; */
+        margin-top: 45px;
+        border-bottom: 1px solid #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .side-nav ul li a{
+        font-size: larger;
+    }
+    .sidebar-toggler-button{
+        display: block;
+        position: fixed;
+        right: 30px;
+        top: 20px;
+        z-index: 100;
+        transition: 0.2s ease-in-out;
+    }
+    #side-bar-toggle:checked ~ .side-nav{
+        transform: translateY(350px);
+    }
+    #side-bar-toggle:checked ~ .sidebar-toggler-button 
+    .upper-line{
+        transform: rotate(135deg);
+        margin-top: 12px;
+    }
+    #side-bar-toggle:checked ~ .sidebar-toggler-button 
+    .middle-line{
+        opacity: 0;
+    }
+    #side-bar-toggle:checked ~ .sidebar-toggler-button 
+    .lower-line{
+        transform: rotate(-135deg);
+        margin-top: -13px;
+    }
+}
