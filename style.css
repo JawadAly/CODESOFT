@@ -17,14 +17,16 @@ section{
     overflow-x: hidden !important;
     float: left;
 }
+#home-section{
+    background: #222831;    
+}
 #footer-section{
     min-height: 50vh !important;
 }
-
 .nav-wrapper{
     width: 100%;
     height: 60px;
-    background: lightseagreen;
+    background: #222831;
     position: fixed;
     left: 0;
     right: 0;
@@ -48,7 +50,7 @@ section{
     margin-right: 0;
 }
 .home-text{
-    font-weight: 500;
+    font-weight: 600;
 }
 .sidebar-toggler-button{
     width: 40px;
@@ -73,6 +75,30 @@ section{
 .sidebar-toggler-button 
 .upper-line{
     margin-top: 0;
+}
+.inverter-btn {
+    width: 85px;
+    height: 26px;
+    border: none;
+    border-radius: 18px;
+    background: #00ADB5;
+}
+.hero-banner{
+    margin-top: 60px;
+    width: 100%;
+    height: 100vh;
+    /* display: flex;
+    align-items: center;     */
+}
+.am-text{
+    color: #00ADB5;
+}
+.hero-title-name{
+    font-weight: 700;
+    color: #00ADB5;
+}
+.hero-desc{
+    font-size: small;
 }
 @media only screen and (max-width:992px){
     .side-nav{
