@@ -6,23 +6,21 @@
     font-family: 'Montserrat', sans-serif;
 }
 body{
-    /* overflow: hidden !important; */
+    overflow-x: hidden;
 }
-html{
+/* html{
     scroll-behavior: smooth;
-}
+} */
 section{
     width: 100%;
     min-height: 100vh;
-    overflow-x: hidden !important;
-    float: left;
+    overflow-x: hidden;
 }
 #home-section{
     background: #222831;    
+    margin-top: 60px;
 }
-#footer-section{
-    min-height: 50vh !important;
-}
+
 .nav-wrapper{
     width: 100%;
     height: 60px;
@@ -37,6 +35,7 @@ section{
 }
 .logo .logo-text{
     font-weight: 600;
+    font-size: 30px;
     z-index: 200;
 }
 .side-nav ul{
@@ -76,19 +75,21 @@ section{
 .upper-line{
     margin-top: 0;
 }
-.inverter-btn {
+/* .inverter-btn {
     width: 85px;
     height: 26px;
     border: none;
     border-radius: 18px;
     background: #00ADB5;
-}
-.hero-banner{
-    margin-top: 60px;
+} */
+
+/* hero-section-css */
+.bannerHolder{
     width: 100%;
-    height: 100vh;
-    /* display: flex;
-    align-items: center;     */
+    /* min-height: 82vh; */
+}
+.row{
+    overflow-x: hidden;
 }
 .am-text{
     color: #00ADB5;
@@ -100,10 +101,42 @@ section{
 .hero-desc{
     font-size: small;
 }
-@media only screen and (max-width:992px){
+.myImg{
+    max-width: 500px;
+    max-height: 500px;
+}
+
+/* Footer-CSS */
+.footer{
+    width: 100%;
+    min-height: 12vh;
+    background: #222831;
+}
+.social-ul{
+    list-style-type: none;
+}
+.social-ul li{
+    margin-right: 40px;
+}
+.social-ul li a{
+    font-size: 22px;
+}
+.heroBtns{
+    border: 3px solid #00ADB5;
+    /* border: 2px solid whitesmoke; */
+    background-color: #222831;
+    padding: 6px 25px;
+}
+.heroBtns a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+}
+@media only screen and (max-width:768px){
     .side-nav{
         position: fixed;
-        transform: translateY(-350px);
+        transform: translateY(-100%);
+        top: 0;
         right: 0;
         left: 0;
         height: 100vh;
@@ -115,12 +148,13 @@ section{
     .side-nav ul{
         flex-direction: column;
         width: 100%;
-        margin-top: 20px;
+        justify-content: center;
     }
     .side-nav ul li{
         display: block;
         /* width: 100%; */
-        margin-top: 45px;
+        /* margin-top: 45px; */
+        margin-bottom: 20%;
         border-bottom: 1px solid #fff;
         display: flex;
         align-items: center;
@@ -138,7 +172,7 @@ section{
         transition: 0.2s ease-in-out;
     }
     #side-bar-toggle:checked ~ .side-nav{
-        transform: translateY(350px);
+        transform: translateY(0);
     }
     #side-bar-toggle:checked ~ .sidebar-toggler-button 
     .upper-line{
@@ -153,5 +187,20 @@ section{
     .lower-line{
         transform: rotate(-135deg);
         margin-top: -13px;
+    }
+    .banner-flexer{
+        flex-direction: column-reverse;
+        column-gap: 300px;
+    }
+    .hero-data{
+        margin: 30px 0px 20px 0px;
+    }
+    .myImg{
+        padding-top: 20px;
+    }
+}
+@media only screen and (max-width:375px){
+    .hero-data{
+        margin-top: 25px;
     }
 }
