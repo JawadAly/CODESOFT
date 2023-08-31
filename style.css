@@ -15,6 +15,7 @@ section{
     width: 100%;
     min-height: 100vh;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 #home-section{
     background: #222831;    
@@ -29,6 +30,7 @@ section{
     left: 0;
     right: 0;
     top: 0;
+    z-index: 1000;
 }
 .logo{
     height: 60px;
@@ -105,7 +107,32 @@ section{
     max-width: 500px;
     max-height: 500px;
 }
-
+/* about-section-css */
+.aboutSection{
+    background-color: #222831;
+}
+.aboutDesc li{
+    position: relative;
+}
+.inner::before{
+    content: '';
+    position: absolute;
+    top: 22px;
+    left: -13px;
+    /* right: 10px; */
+    width: 2px;
+    height: 80%;
+    background: lightslategrey;
+}
+/* .aboutDesc li::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: #fff;
+} */
 /* Footer-CSS */
 .footer{
     width: 100%;
@@ -197,6 +224,9 @@ section{
     }
     .myImg{
         padding-top: 20px;
+    }
+    .aboutFlexer{
+        padding: 40px 0px;
     }
 }
 @media only screen and (max-width:375px){

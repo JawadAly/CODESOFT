@@ -18,3 +18,7 @@ Array.from(btns).forEach((singleBtn)=>{
         console.log(typedString);
     })
 })
+// for footer year
+const currentYear = new Date().getFullYear();
+const footerSpan = document.getElementById('footerDate');
+footerSpan.innerHTML = currentYear;

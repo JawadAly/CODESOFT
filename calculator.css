@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+section{
+    overflow-x: hidden;
+}
 .heroSection{
     width: 100%;
     min-height: 100vh;
@@ -16,8 +19,8 @@
     height: 28rem;
     border-radius: 20px;
     background: black;
-    position: fixed;
-    top: 55%;
+    position: absolute;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
@@ -58,4 +61,13 @@ button{
     justify-content: flex-start;
     align-items: center;
     padding-left: 20px;
+}
+.footerSection{
+    width: 100%;
+    min-height: 40px;
+    background-color: lightseagreen;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
