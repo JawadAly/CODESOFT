@@ -271,6 +271,23 @@ section{
     text-decoration: none;
     font-weight: bold;
 }
+/* preloader-CSS */
+.preloader{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: preload 6s ease;
+    opacity: 0;
+}
+@keyframes preload{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
 @media only screen and (max-width:768px){
     .side-nav{
         position: fixed;
