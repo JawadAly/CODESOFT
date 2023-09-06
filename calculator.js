@@ -10,6 +10,10 @@ Array.from(btns).forEach((singleBtn)=>{
         else if(e.target.innerHTML === '='){
             typedString = eval(typedString);
         }
+        else if(e.target.innerHTML === 'DE'){
+            // removing the last element of string by using slice method
+            typedString = typedString.slice(0,-1);
+        }
         else{
             let incomingVal = e.target.innerHTML;
             typedString += incomingVal;

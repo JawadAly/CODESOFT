@@ -10,12 +10,15 @@ section{
 .heroSection{
     width: 100%;
     min-height: 100vh;
+    background: #ad5389;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .heroHeading{
     font-family: 'Cormorant Garamond', serif;
 }
 .calculatorBox{
-    width: 20rem;
+    width: 18.5rem;
     height: 28rem;
     border-radius: 20px;
     background: black;
@@ -23,6 +26,7 @@ section{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .inputArea{
     width: 100%;
@@ -47,6 +51,9 @@ button{
     color: white;
     font-size: 20px;
 }
+button:hover{
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6);
+}
 .specBtn{
     background-color: lightgrey !important;
     color: #000;
@@ -65,7 +72,8 @@ button{
 .footerSection{
     width: 100%;
     min-height: 40px;
-    background-color: lightseagreen;
+    background-color: lightslategray;
+    color: #fff;
     position: absolute;
     left: 0;
     right: 0;
