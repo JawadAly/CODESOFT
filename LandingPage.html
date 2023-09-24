@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitSmash Gym | Home</title>
+    <!-- Bootstrap-CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="landingpage.css">
+</head>
+<body>
+    <!-- Nav-Section -->
+    <div class="nav-wraper">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo d-flex align-items-center justify-content-center">
+                <h5 class="heading fw-bold">FitSmash Gym</h5>
+            </div>
+            <input type="checkbox" class="d-none" id="sidemenu-checkbox">
+            <label class="nav-button d-none" for="sidemenu-checkbox">
+                <div class="upper-line"></div>
+                <div class="middle-line"></div>
+                <div class="lower-line"></div>
+            </label>
+            <div class="side-bar" id="sideNav">
+                <div class="ul-holder p-3">
+                    <ul class="d-flex pt-1">
+                        <li><a href="#home-section" onclick="closeSideBar()">Home</a></li>
+                        <li><a href="#about-section">About</a></li>
+                        <li><a href="#gallery-section">Gallery</a></li>
+                        <li><a href="#testimonials-section">Testimonilas</a></li>
+                        <li><a href="#contact-section">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Nav-Section -->
+
+    <!-- Banner-Section -->
+    <section id="home-section" style="background: whitesmoke;">
+        <div class="container">
+            <div class="flexer d-flex align-items-center justify-content-center">
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <h1 class="banner-quote">Lift <span class="text-warning"> Yourself </span> Because No one is gona do it for you</h1>
+                        <button class="btn btn-warning" onclick="showDialogue()">Join Now</button>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="banner-img">
+                            <img src="https://media0.giphy.com/media/3XFvCvSTWdfXL0OHmg/giphy.gif" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner-Section -->
+
+    <!-- About-Section -->
+    <section id="about-section" style="background-color: #E1D7C6;">
+      <div class="container p-5">
+          <h3 class="text-center about-heading"> Our <span class="text-info">Specialities</span> for Clients..! </h3>
+            <div class="flexer-new">
+                <div class="grid-container">
+                    <div class="card text-center my-card">
+                        <div class="card-img-top">
+                            <lord-icon
+                            src="https://cdn.lordicon.com/okyfhqcr.json"
+                            trigger="hover"
+                            colors="primary:#3a3347,secondary:#f24c00,tertiary:#4bb3fd,quaternary:#f9c9c0"
+                            style="width:120px;height:120px">
+                        </lord-icon>
+                        </div>
+                        <div class="card-body pt-0">
+                            <div class="card-title">Loose Weight</div>
+                            <div class="card-decription"><p class="text-secondary"> Our specialized workout plans enable our clients get into desired body shape in short time.</p></div>
+                        </div>
+                    </div>
+
+                    <div class="card text-center my-card">
+                        <div class="card-img-top">
+                          <lord-icon
+                            src="https://cdn.lordicon.com/xplwhusq.json"
+                            trigger="hover"
+                            style="width:120px;height:120px">
+                          </lord-icon>
+                        </div>
+                        <div class="card-body pt-0">
+                            <div class="card-title">Eat Healthy</div>
+                            <div class="card-decription"><p class="text-secondary"> Our trainers are certified specialy for providing our clients a feeling of being strengthened by eating healthy.</p></div>
+                        </div>
+                    </div>
+
+                    <div class="card text-center my-card">
+                        <div class="card-img-top">
+                          <lord-icon
+                            src="https://cdn.lordicon.com/qfnzeizw.json"
+                            trigger="hover"
+                            colors="primary:#b26836,secondary:#4bb3fd,tertiary:#f9c9c0,quaternary:#646e78,quinary:#3a3347,senary:#121331"
+                            style="width:120px;height:120px">
+                          </lord-icon>
+                        </div>
+                        <div class="card-body pt-0">
+                            <div class="card-title">Stay Consistent</div>
+                            <div class="card-decription"><p class="text-secondary"> Being consistent and hard work is the key to success which is guarenteed through our motivated environment.</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About-Section -->
+
+    <!-- Gallery-Section -->
+    <section id="gallery-section" style="background: whitesmoke;">
+      <div class="container">
+        <h3 class="gallery-heading text-center mt-4">Our Trainers</h3>
+        <div class="trainers-cards-holder p-md-4 p-lg-4">
+        <div class="row d-flex align-items-center">
+          <div class="col-md-6 col-12 d-flex justify-content-center">
+            <div class="for-border-div mt-5 d-flex align-items-center justify-content-center">
+              <div class="img-holder">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-12 pt-5">
+            <div class="trainer-name-holder d-flex align-items-center">
+              <h4><i> John Stea </i></h4>
+              <img src="images/verified-tick-removebg-preview.png" alt=""  class="ms-2" width="40px" height="28px">
+            </div> 
+            <div class="trainer-desc text-secondary">
+                <ul>
+                  <li>Strength and Performance Coach at Level 10 since 2013</li>
+                  <li>Director of Hockey Performance at Level 10</li>
+                  <li>Graduate assistant at The University of British Columbia 2014-2019, working with athletes from all 26 varsity sports</li>
+                  <li>Lead strength and conditioning coach with UBC Men's Rugby from 2013-2019</li>
+                  <li>Worked with hundreds of athletes from a wide variety of sport</li>
+                </ul>
+            </div>           
+          </div>
+          <hr class="mt-3">
+        </div>
+
+        <div class="row d-flex align-items-center">
+          <div class="col-md-6 col-12 pt-5">
+            <div class="trainer-name-holder d-flex align-items-center">
+              <h4><i> Kyle Hildebrandt </i></h4>
+              <img src="images/verified-tick-removebg-preview.png" alt=""  class="ms-2" width="40px" height="28px">
+            </div> 
+            <div class="trainer-desc text-secondary">
+                <ul>
+                  <li>Strength and conditioning coach at Level 10 since 2015</li>
+                  <li>Account manager at the Palliser Fitness Center in Calgary in 2013</li>
+                  <li>Owner of a training and coaching business in Calgary in 2010 - worked with a highly diversified clientele, including youth soccer athletes, university-level volleyball athletes, senior executives, weekend warriors and parents</li>
+                  <li>Fitness manager at GoodLife Fitness in Calgary from 2009-2010</li>
+                  <li>Worked with high-level speedskating athletes during a practicum at the Olympic Oval in Calgary</li>
+                </ul>
+            </div>           
+          </div>
+          <div class="col-md-6 col-12 d-flex justify-content-center">
+            <div class="for-border-div mt-5 d-flex align-items-center justify-content-center">
+              <div class="img-holder-2">
+              </div>
+            </div>
+          </div>
+          <hr class="mt-3">
+        </div>
+
+        <div class="row d-flex align-items-center">
+          <div class="col-md-6 col-12 d-flex justify-content-center">
+            <div class="for-border-div mt-5 d-flex align-items-center justify-content-center">
+              <div class="img-holder-3">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-12 pt-5">
+            <div class="trainer-name-holder d-flex align-items-center">
+              <h4><i> Isabella Krave </i></h4>
+              <img src="images/verified-tick-removebg-preview.png" alt=""  class="ms-2" width="40px" height="28px">
+            </div> 
+            <div class="trainer-desc text-secondary">
+                <ul>
+                  <li>Strength and Performance Coach at Level 10 since 2013</li>
+                  <li>Director of Hockey Performance at Level 10</li>
+                  <li>Graduate assistant at The University of British Columbia 2014-2019, working with athletes from all 26 varsity sports</li>
+                  <li>Lead strength and conditioning coach with UBC Men's Rugby from 2013-2019</li>
+                  <li>Worked with hundreds of athletes from a wide variety of sport</li>
+                </ul>
+            </div>           
+          </div>
+          <hr class="mt-3">
+        </div>
+
+      </div>
+      </div>
+    </section>
+    <!-- Gallery-Section -->
+
+    <!-- Testimonials-Section -->
+    <section id="testimonials-section">
+      <div class="container">
+        <h3 class="text-center text-white testimonials-heading mt-4">Your <span class="text-warning"> Progress </span> Is Monitored And <span class="text-warning"> Analyzed </span></h3>
+        
+          <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-md-6 col-12 pe-5">
+                <div class="progress-holder w-100">
+                    <div class="progress mt-5 my-progress" style="background: transparent;" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      <label for="" class="progress-label">Hello</label>
+                      <div class="progress-bar bg-success" style="width: 25%"></div>
+                    </div>
+                    <div class="progress mt-5 my-progress" style="background: transparent;" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                      <label for="" class="progress-label">Hello</label>
+                      <div class="progress-bar bg-info" style="width: 50%"></div>
+                    </div>
+                    <div class="progress mt-5 my-progress" style="background: transparent;" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                      <label for="" class="progress-label">Hello</label>
+                      <div class="progress-bar bg-warning" style="width: 75%"></div>
+                    </div>
+                    <div class="progress mt-5 my-progress" style="background: transparent;" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                      <label for="" class="progress-label">Hello</label>
+                      <div class="progress-bar bg-danger" style="width: 100%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-12 ps-5">
+              <div class="testimonials-img-holder me-3">
+                <img src="images/testimonials-img.png" alt="" width="550px" height="450px">
+              </div>
+            </div>
+          </div>
+        
+      </div>
+    </section>
+    <!-- Testimonials-Section -->
+
+    <!-- Contact-Section -->
+    <section id="contact-section" style="background-color: cornflowerblue;">
+      <div class="container">
+        <h3 class="text-center text-white contact-heading mt-4">Register <span class="text-warning"> Yourself </span> With <span class="text-warning"> Us..! </span></h3>
+        <div class="form-holder w-100 pt-4"> 
+          <div class="row">
+            <div class="col-md-4 col-11">
+              <div class="form-group mb-md-5 mb-4">
+                <label for="" class="text-white mb-1">Name <span class="text-danger">*</span></label>
+                <input type="text" required class="form-control text-inputs" name="" id="">
+              </div>
+            </div>
+            <!-- <div class="col"></div> -->
+            <div class="col-md-5 col-11">
+              <div class="form-group mb-md-5 mb-4 ps-md-5">
+                <label for="" class="text-white mb-1">CNIC <span class="text-danger">*</span></label>
+                <input type="text" required class="form-control text-inputs" name="" id="">
+              </div>
+            </div>
+
+            <div class="col-md-4 col-11">
+              <div class="form-group mb-md-5 mb-4">
+                <label for="" class="text-white mb-1">Age <span class="text-danger">*</span></label>
+                <input type="text" required class="form-control text-inputs" name="" id="">
+              </div>
+            </div>
+
+            <div class="col-md-5 col-11">
+              <div class="form-group mb-md-5 mb-4 ps-md-5">
+                <label for="" class="text-white mb-1">Phone <span class="text-danger">*</span></label>
+                <input type="text" class="form-control text-inputs" name="" id="">
+              </div>
+            </div>
+
+            <div class="col-md-4 col-11">
+              <div class="form-group mb-4">
+                <label for="" class="text-white mb-1">Timings<span class="text-danger">*</span></label>
+                <select name="" id="" class="form-control">
+                  <option value="" class="form-control"></option>
+                  <option value="" class="form-control"></option>
+                  <option value="" class="form-control"></option>
+                  <option value="" class="form-control"></option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-warning mt-4">Register</button>
+        </div>
+      </div>
+    </section>
+    <!-- Contact-Section -->
+
+
+    <!-- Footer -->
+<footer class="text-center text-lg-start bg-white text-muted">
+    <!-- Section: Social media -->
+    <section class="footer-section d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3 text-secondary"></i>FitSmash Gym
+            </h6>
+            <p>
+              Here you can use rows and columns to organize your footer content. Lorem ipsum
+              dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Pages
+            </h6>
+            <p>
+              <a href="#home-section" class="text-reset">Home</a>
+            </p>
+            <p>
+              <a href="#about-section" class="text-reset">About</a>
+            </p>
+            <p>
+              <a href="#gallery-section" class="text-reset">Gallery</a>
+            </p>
+            <p>
+              <a href="#testimonials-section" class="text-reset">Testimonials</a>
+            </p>
+            <p>
+              <a href="#contact-section" class="text-reset">Contact</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Pricing</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Settings</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Orders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3 text-secondary"></i> New York, NY 10012, US</p>
+            <p>
+              <i class="fas fa-envelope me-3 text-secondary"></i>
+              info@example.com
+            </p>
+            <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="https://jawadprofile.netlify.app/">JS Dev.Co</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+<!-- Pre-Loader -->
+<!-- <div class="preloader">
+    <img src="https://i.pinimg.com/originals/c7/e1/b7/c7e1b7b5753737039e1bdbda578132b8.gif" alt="" class="img-fluid">
+</div> -->
+<!-- Pre-Loader -->
+
+    <!-- Scripts -->
+    <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="landingpage.js"></script>
+    <!-- Scripts -->
+</body>
+</html>

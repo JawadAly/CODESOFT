@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Petrona:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    overflow-x: hidden !important;
+}
+html{
+    scroll-behavior: smooth;
+}
+.nav-wraper{
+    width: 100%;
+    height: 65px;
+    background: #1A1110;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+}
+.logo{
+    /* background-color: aquamarine; */
+    width: 160px;
+    height: 50px;
+}
+.logo .heading{
+    color: #fff;
+    letter-spacing: 2px;
+}
+.ul-holder ul{
+    list-style-type: none;
+}
+.ul-holder ul li{
+    margin-right: 27px;
+}
+.ul-holder ul li:last-child{
+    margin-right: 0;
+}
+.ul-holder ul li a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+.ul-holder ul li a:hover{
+    color: cornsilk;
+}
+.nav-button{
+    position: fixed;
+    top: 12px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.upper-line,.middle-line,.lower-line{
+    width: 32px;
+    height: 3px;
+    background: #fff;
+    margin-top: 7px;
+    border-radius: 30px;
+    transition: 0.3s ease;
+}
+#home-section,
+#about-section,
+#gallery-section,
+#testimonials-section,
+#contact-section{
+    width: 100%;
+    min-height: 100vh;
+    float: left;
+    overflow-x: hidden;
+}
+
+#home-section{
+    margin-top: 65px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+.flexer{
+    min-height: 100vh;
+}
+.banner-quote{
+    font-family: 'Petrona', serif;
+    font-size: 45px;
+}
+#about-section{
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+#about-section .about-heading{
+    font-family: 'Petrona', serif;
+    font-size: 35px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 100px;
+}
+.my-card{
+    display: grid;
+    width: 14rem !important;
+}
+.my-card:hover{
+    background-color: whitesmoke;
+}
+.card-decription p{
+    font-size: 14px;
+}
+.flexer-new{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+#gallery-section .gallery-heading{
+    font-family: 'Petrona', serif;
+    font-size: 35px;
+}
+.img-holder{
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: url(images/trainer-1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transition: 0.3s ease-in-out;
+}
+.img-holder:hover{
+    transform: scale(1.2);
+}
+.for-border-div{
+    width: 242px;
+    height: 242px;
+    border-radius: 50%;
+    border: 1px solid lightskyblue;
+}
+.img-holder-2{
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: url(images/trainer-2.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transition: 0.3s ease-in-out;
+}
+.img-holder-2:hover{
+    transform: scale(1.2);
+}
+.img-holder-3{
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: url(images/trainer-3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transition: 0.3s ease-in-out;
+}
+.img-holder-3:hover{
+    transform: scale(1.2);
+}
+#testimonials-section{
+    background: url(images/back-img.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.testimonials-heading{
+    font-family: 'Petrona', serif;
+    font-size: 35px;
+}
+.banner-holder{
+    min-height: 100vh;
+}
+.testimonials-img-holder{
+    width: 100% ;
+    height: 100% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-heading{
+    font-family: 'Petrona', serif;
+    font-size: 32px;
+}
+.form-holder{
+    min-height: 100vh;
+    padding-top: 10px;
+}
+
+.footer-section{
+    min-height: 0vh !important;
+}
+.preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1A1110;
+    z-index: 300;
+    animation: loader 10s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+.preloader img{
+    width: 100%;
+    height: 100%;
+}
+@keyframes loader {
+    from{
+        opacity: 1;
+        visibility: visible;
+    }
+    to{
+        opacity: 0;
+        visibility: hidden;
+    }
+
+}
+@media only screen and (max-width:992px){
+    .side-bar{
+        position: fixed;
+        top: 65px;
+        right: 0;
+        width: 250px;
+        height: 100%;
+        background: #1A1110;
+    }
+    .ul-holder{
+        padding-left: 0px !important;
+        position: relative;
+    }
+    .ul-holder ul{
+        flex-direction: column;
+        position: relative;
+    }
+    .logo{
+     padding-top: 20px;
+    }
+    .ul-holder ul li{
+     margin-top: 40px;
+     border-bottom: 1px solid #fff;
+     padding-bottom: 6px;
+    }
+    .ul-holder ul li a{
+        font-size: 16px;
+    }
+    .nav-button{
+        display: block !important;
+    }
+    .side-bar{
+        transform: translateX(250px);
+        transition: 0.2s ease-in-out;
+    }
+    #sidemenu-checkbox:checked ~ .side-bar{
+        transform: translateX(0px);
+    }
+    #sidemenu-checkbox:checked ~ .nav-button > .upper-line{
+        transform: rotate(135deg);
+        margin-top: 12px;
+    }
+    #sidemenu-checkbox:checked ~ .nav-button > .middle-line{
+        opacity: 0;
+    }
+    #sidemenu-checkbox:checked ~ .nav-button > .lower-line{
+        transform: rotate(-135deg);
+        margin-top: -13px;
+    }
+    .grid-container{
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    .my-card{
+        margin-top: 50px;
+    }
+    .my-card:last-child{
+        margin-top: 30px;
+    }
+    
+}
+@media only screen and (max-width:768px){
+.banner-img{
+    margin-top: 50px;
+}
+
+}
+@media only screen and (max-width:480px){
+    
+    .grid-container{
+        grid-template-columns: 1fr !important;
+    }
+    }
